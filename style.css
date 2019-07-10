@@ -17,8 +17,6 @@ hr {
     width: 100%;
     border: 0px solid;
     background: linear-gradient(to right, rgba(255,0,0,0), #40DEFF, #3A81E8, #4E4CFF, #893AE8, #ED57FF, #893AE8, #4E4CFF, #3A81E8, #40DEFF, rgba(255,0,0,0));
-
-    /*background: linear-gradient(to right, rgba(255,0,0,0), #40DEFF, #3A81E8, #4E4CFF, #893AE8, #ED57FF, rgba(255,0,0,0));*/
 }
 
 .navbar {
@@ -37,7 +35,7 @@ hr {
     padding: 8px 12px 20px;
 }
 
-.navbar a:hover, #dropdown:hover #drop {
+.navbar a:hover, .infoblock a:hover {
     background-color: lightgray;
 }
 
@@ -49,6 +47,26 @@ hr {
     min-width: 600px;
     max-width: 900px;
 }
+
+.infoblock {
+    text-align: center;
+    width: 200px;
+    height: 225px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.infoblock a {
+    font-size: 16px;
+    color: gray;
+    padding: 10px;
+}
+
+.left {
+    float: left; 
+}
+
+
 /*
 
 #about-left {
