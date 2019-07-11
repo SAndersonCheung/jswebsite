@@ -1,3 +1,5 @@
+/* applies to everything */
+
 * {
     margin-left: auto;
     margin-right: auto;
@@ -9,6 +11,8 @@ body {
     max-width: 1000px;
     background-color: white;
 }
+
+/* applies to every page */
 
 hr {
     margin-top: 10px;
@@ -48,6 +52,8 @@ hr {
     max-width: 900px;
 }
 
+/* applies to directory */
+
 .infoblock {
     text-align: center;
     width: 200px;
@@ -62,26 +68,69 @@ hr {
     padding: 10px;
 }
 
-.left {
+/* applies to about */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0072b1;
+    color: white;
+}
+
+.left, #about-left {
     float: left; 
+    position: static;
+}
+
+#about-left {
+    width: 200px;
+}
+
+#about-center {
+    width: 425px;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+
+}
+
+.right, #about-right {
+    float: right; 
+    position: static;
 }
 
 
 /*
 
 #about-left {
-    float: left;
-    min-width: 600px;
-    max-width: 700px;
+float: left;
+min-width: 600px;
+max-width: 700px;
 }
 
 #about-center {
-    min-width: 700px;
-    max-width: 800px;
+min-width: 700px;
+max-width: 800px;
 }
 
 #about-right {
-    float: right;
-    min-width: 800px;
-    max-width: 900px;
+float: right;
+min-width: 800px;
+max-width: 900px;
 }*/
