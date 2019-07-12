@@ -23,7 +23,7 @@ hr {
     background: linear-gradient(to right, rgba(255,0,0,0), #40DEFF, #3A81E8, #4E4CFF, #893AE8, #ED57FF, #893AE8, #4E4CFF, #3A81E8, #40DEFF, rgba(255,0,0,0));
 }
 
-.navbar {
+.navbar, #footer {
     overflow: hidden;
     height: 45px;
     text-align: center;
@@ -39,7 +39,7 @@ hr {
     padding: 8px 12px 20px;
 }
 
-.navbar a:hover, .infoblock a:hover {
+.navbar a:hover, .infoblock a:hover, #footer a:hover {
     background-color: lightgray;
 }
 
@@ -47,9 +47,22 @@ hr {
     text-align: center;
 }
 
+#footer a {
+    float: right;
+    border-right: 1px solid gray;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    padding: 8px 12px 20px 12px;
+}
+
 .page-content, .topbar {
     min-width: 600px;
     max-width: 900px;
+}
+
+p a {
+    color: darkslategray;
 }
 
 /* applies to directory */
@@ -73,9 +86,10 @@ hr {
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
+    border-radius: 50%;
 }
 
 .fa:hover {
@@ -87,9 +101,19 @@ hr {
     color: white;
 }
 
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 .fa-linkedin {
     background: #0072b1;
     color: white;
+}
+
+.fa-tumblr {
+  background: #34526f;
+  color: white;
 }
 
 .left, #about-left {
