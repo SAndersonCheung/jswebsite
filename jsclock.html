@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
-    <body>
+    <body onload="startTime()">
         <div id="header">
             <h1>javascript experiments</h1>
             <p>this website is for me to showcase some small javascript things i've been trying in my spare time.</p>
@@ -23,7 +23,16 @@
 
         <div class = "page-content">
 
-            <!-- -->
+            <h2>clock one: </h2>
+
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">click here for time</button>
+
+            <p id="demo"></p>
+
+            <h2>clock two: </h2>
+
+            <script src="myScript1.js"></script>
+            <div id="txt"></div>
 
         </div>
 
