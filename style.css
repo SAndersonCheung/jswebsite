@@ -67,18 +67,35 @@ p a {
 
 /* applies to directory */
 
+#infoblocks {
+    text-align: justify;
+}
+
+#infoblocks .infoblock {
+    display: inline-block;
+}
+
 .infoblock {
     text-align: center;
-    width: 200px;
-    height: 225px;
+    width: 175px;
+    height: 250px;
     padding: 10px;
+    margin: 12px;
     border: 1px solid gray;
+    box-shadow: 5px 5px 0px -1px rgba(196,196,196,1);
+
 }
 
 .infoblock a {
     font-size: 16px;
     color: gray;
     padding: 10px;
+}
+
+#infoblocks:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
 }
 
 /* applies to about */
@@ -102,8 +119,8 @@ p a {
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-linkedin {
@@ -112,8 +129,8 @@ p a {
 }
 
 .fa-tumblr {
-  background: #34526f;
-  color: white;
+    background: #34526f;
+    color: white;
 }
 
 .left, #about-left {
