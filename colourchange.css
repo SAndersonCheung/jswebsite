@@ -1,0 +1,55 @@
+.pagecontent {
+    margin-left: 0 auto;
+}
+
+#lilboxes {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.boxcolour {
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+}
+
+.boxcolour #one {
+    background-color: red;
+}
+
+.boxcolour #two {
+    background-color: green;
+}
+
+.boxcolour #three {
+    background-color: blue;
+}
+
+.boxcolour #four {
+    background-color: yellow;
+}
+
+#bigbox {
+    height: 200px;
+    width: 600px;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boxcolour #five {
+/*    background-color: yellow;*/
+}
+
+.boxcolour #six {
+/*    background-color: yellow;*/
+}
+
+.boxcolour #seven {
+/*    background-color: yellow;*/
+}
+
+.boxcolour #eight {
+/*    background-color: yellow;*/
+}
