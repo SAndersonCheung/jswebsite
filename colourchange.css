@@ -15,19 +15,19 @@
 }
 
 .boxcolour #one {
-    background-color: red;
+    background: #740932;
 }
 
 .boxcolour #two {
-    background-color: green;
+    background-color: #FE9D5C;
 }
 
 .boxcolour #three {
-    background-color: blue;
+    background-color: #CF5C14 !important;
 }
 
 .boxcolour #four {
-    background-color: yellow;
+    background-color: #20B89F;
 }
 
 #bigbox {
@@ -39,17 +39,17 @@
 }
 
 .boxcolour #five {
-/*    background-color: yellow;*/
+    background-color: #147A60;
 }
 
 .boxcolour #six {
-/*    background-color: yellow;*/
+    background-color: #579F31;
 }
 
 .boxcolour #seven {
-/*    background-color: yellow;*/
+    background-color: #418324;
 }
 
 .boxcolour #eight {
-/*    background-color: yellow;*/
+    background-color: #d62b8c;
 }
