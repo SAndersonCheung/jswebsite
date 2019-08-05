@@ -8,6 +8,7 @@ function startTime() {
   document.getElementById('txt').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
+    
 }
 function checkTime(i) {
   if (i < 10) {
