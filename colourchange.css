@@ -2,7 +2,7 @@
     margin-left: 0 auto;
 }
 
-#lilboxes {
+.lilboxes {
     display: flex;
     justify-content: space-between;
     width: 600px;
@@ -14,19 +14,19 @@
     border: 3px solid black;
 }
 
-.boxcolour #one {
+#one {
     background: #740932;
 }
 
-.boxcolour #two {
+#two {
     background-color: #FE9D5C;
 }
 
-.boxcolour #three {
+#three {
     background-color: #CF5C14 !important;
 }
 
-.boxcolour #four {
+#four {
     background-color: #20B89F;
 }
 
@@ -38,18 +38,18 @@
     margin-bottom: 20px;
 }
 
-.boxcolour #five {
+#five {
     background-color: #147A60;
 }
 
-.boxcolour #six {
+#six {
     background-color: #579F31;
 }
 
-.boxcolour #seven {
+#seven {
     background-color: #418324;
 }
 
-.boxcolour #eight {
+#eight {
     background-color: #d62b8c;
 }
