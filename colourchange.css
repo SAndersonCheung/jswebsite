@@ -19,15 +19,15 @@
 }
 
 #two {
-    background-color: #FE9D5C;
+    background: #FE9D5C;
 }
 
 #three {
-    background-color: #CF5C14 !important;
+    background: #CF5C14;
 }
 
 #four {
-    background-color: #20B89F;
+    background: #20B89F;
 }
 
 #bigbox {
@@ -39,17 +39,26 @@
 }
 
 #five {
-    background-color: #147A60;
+    background: #147A60;
 }
 
 #six {
-    background-color: #579F31;
+    background: #579F31;
 }
 
 #seven {
-    background-color: #418324;
+    background: #418324;
 }
 
 #eight {
-    background-color: #d62b8c;
+    background: #d62b8c;
+}
+
+.arrow {
+    font-size: 40px;
+}
+
+.arrow a {
+    color: darkslategray;
+      text-decoration: none;
 }
