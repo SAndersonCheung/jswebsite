@@ -1,34 +1,47 @@
-function makeGradient(){
+var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight"];
+var whichID = ["false", "false", "false", "false", "false", "false", "false", "false"];
+
+function makeGradient() {
     var colourOne = null;
     var colourTwo = null;
+    
+    for (var i = 0; i < ids.length - 1; i++){
+        if (whichID[i] == "true" && colourOne == null) {
+            colourOne = ids[i];
+        }
+        if (whichID[i] == "true" && colourOne != null) {
+            colourTwo = ids[i];
+        }
+    } 
+    
     document.getElementById('bigbox').style.background = 'linear-gradient(to right, retrieveColour(colourOne), retrieveColour(colourTwo))';
 }
 
-function retrieveColour(cat){
-    return document.getElementById(cat).style.backgroundColor;
+function retrieveColour(colour) {
+    return document.getElementById(colour).style.backgroundColor;
 }
 
-function setOne(){
-    var colour = one;
+function setOne() {
+    whichID[0] = "true";
 }
-function setTwo(){
-    var colour = two;
+function setTwo() {
+    whichID[1] = "true"
 }
-function setThree(){
-    var colour = three;
+function setThree() {
+    whichID[2] = "true";
 }
-function setFour(){
-    var colour = four;
+function setFour() {
+    whichID[3] = "true";
 }
-function setFive(){
-    var colour = five;
+function setFive() {
+    whichID[4] = "true";
 }
-function setSix(){
-    var colour = six;
+function setSix() {
+    whichID[5] = "true";
 }
-function setSeven(){
-    var colour = seven;
+function setSeven() {
+    whichID[6] = "true";
 }
-function setEight(){
-    var colour = eight;
+function setEight() {
+    whichID[7] = "true";
 }
