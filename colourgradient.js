@@ -4,7 +4,7 @@ var whichID = ["false", "false", "false", "false", "false", "false", "false", "f
 function makeGradient() {
     var colourOne = null;
     var colourTwo = null;
-    
+
     for (var i = 0; i < ids.length - 1; i++){
         if (whichID[i] == "true" && colourOne == null) {
             colourOne = ids[i];
@@ -12,13 +12,20 @@ function makeGradient() {
         if (whichID[i] == "true" && colourOne != null) {
             colourTwo = ids[i];
         }
-    } 
-    
-    document.getElementById('bigbox').style.background = 'linear-gradient(to right, retrieveColour(colourOne), retrieveColour(colourTwo))';
+    }
+
+    document.getElementById('bigbox').style.background = `linear-gradient(to right, ${retrieveColour(colourOne)}, ${retrieveColour(colourTwo)})`;
 }
 
 function retrieveColour(colour) {
-    return document.getElementById(colour).style.backgroundColor;
+    return document.defaultView.getComputedStyle(document.getElementById(colour)).getPropertyValue("background-color");
+}
+
+function doReset() {
+    for (var i = 0; i < ids.length - 1; i++){
+        whichID[i] = "false";
+    }
+    document.getElementById('bigbox').style.background='white'
 }
 
 function setOne() {

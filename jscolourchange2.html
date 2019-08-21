@@ -2,7 +2,7 @@
     <head>
         <title>A quick little site for when i'm bored!</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="stylesheet" href="colourchange.css" type="text/css">
+        <link rel="stylesheet" href="resources/colourchange.css" type="text/css">
     </head>
 
     <body>
@@ -25,29 +25,32 @@
 
             <div class = "lilboxes">
 
-                <div class = "boxcolour" id = "one" onclick="document.getElementById('bigbox').style.background='#740932'"></div>
+                <div class = "boxcolour" id = "one" onclick="setOne()"></div>
 
-                <div class = "boxcolour" id = "two" onclick="document.getElementById('bigbox').style.background='#FE9D5C'"></div>
+                <div class = "boxcolour" id = "two" onclick="setTwo()"></div>
 
-                <div class = "boxcolour" id = "three" onclick="document.getElementById('bigbox').style.background='#CF5C14'"></div>    
+                <div class = "boxcolour" id = "three" onclick="setThree()"></div>    
 
-                <div class = "boxcolour" id = "four" onclick="document.getElementById('bigbox').style.background='#20B89F'"></div>
+                <div class = "boxcolour" id = "four" onclick="setFour()"></div>
 
             </div>
 
-            <div id = "bigbox"><button type="button" onclick="document.getElementById('bigbox').style.background='white'">Reset</button></div>
+            <div id = "bigbox">
+                <button type="button" onclick="doReset()">Reset</button>
+                <button type="button" onclick="makeGradient()">Gradient</button>
+            </div>
 
             <div id = "larrow" class = "arrow"><a href="jscolourchange.html">&lt;</a></div>
-            
+
             <div class = "lilboxes">
 
-                <div class = "boxcolour" id = "five" onclick="document.getElementById('bigbox').style.background='#147A60'"></div>
+                <div class = "boxcolour" id = "five" onclick="setFive()"></div>
 
-                <div class = "boxcolour" id = "six" onclick="document.getElementById('bigbox').style.background='#334691'"></div>
+                <div class = "boxcolour" id = "six" onclick="setSix()"></div>
 
-                <div class = "boxcolour" id = "seven" onclick="document.getElementById('bigbox').style.background='#418324'"></div>
+                <div class = "boxcolour" id = "seven" onclick="setSeven()"></div>
 
-                <div class = "boxcolour" id = "eight" onclick="document.getElementById('bigbox').style.background='#d62b8c'"></div>
+                <div class = "boxcolour" id = "eight" onclick="setEight()"></div>
 
             </div>
         </div>
@@ -57,6 +60,7 @@
         <div id="footer">
             <a href="about.html">summer anderson-cheung</a> 
             <a href="https://www.ncl.ac.uk/computing/">newcastle university</a>
+            <script src="colourgradient.js"></script>
         </div>
 
     </body>
