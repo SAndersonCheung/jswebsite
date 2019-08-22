@@ -98,6 +98,15 @@ p a {
     display: inline-block;
 }
 
+.line {
+    text-align: center;
+    height: 2px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: darkslategray;
+}
+
 /* applies to about */
 
 .fa {
@@ -156,3 +165,14 @@ p a {
     position: static;
 }
 
+.page-content{
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+    width: 30px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
