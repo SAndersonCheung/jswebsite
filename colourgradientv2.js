@@ -1,21 +1,9 @@
-    
 var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight"];
 var whichID = ["false", "false", "false", "false", "false", "false", "false", "false"];
+var choice = [2];
 
 function makeGradient() {
-    var colourOne = null;
-    var colourTwo = null;
-
-    for (var i = 0; i < ids.length - 1; i++){
-        if (whichID[i] == "true" && colourOne == null) {
-            colourOne = ids[i];
-        } else if (whichID[i] == "true" && colourOne != null && colourTwo == null) {
-            colourTwo = ids[i];
-        }
-//        } else if {
-//            document.getElementById('bigbox').innerHTML = "Two colours have already been selected. Please pless reset to select different colours.";
-//        }
-    }
+    
 
     document.getElementById('bigbox').style.background = `linear-gradient(to right, ${retrieveColour(colourOne)}, ${retrieveColour(colourTwo)})`;
 }
@@ -25,9 +13,10 @@ function retrieveColour(colour) {
 }
 
 function doReset() {
-    for (var i = 0; i < ids.length - 1; i++){
-        whichID[i] = "false";
+    for (var i = 0; i < choice.length; i++){
+        choice[i] = null;
     }
+    
     document.getElementById('bigbox').style.background='white'
 }
 
