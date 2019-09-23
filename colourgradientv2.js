@@ -1,6 +1,6 @@
 var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight"];
 var whichID = ["false", "false", "false", "false", "false", "false", "false", "false"];
-var choice = [2];
+var choice = [8];
 
 function makeGradient() {
     
@@ -21,26 +21,26 @@ function doReset() {
 }
 
 function setOne() {
-    whichID[0] = "true";
+    choice[0] == 1;
 }
 function setTwo() {
-    whichID[1] = "true"
+    choice[0] == 2;
 }
 function setThree() {
-    whichID[2] = "true";
+    choice[0] == 3;
 }
 function setFour() {
-    whichID[3] = "true";
+    choice[0] == 4;
 }
 function setFive() {
-    whichID[4] = "true";
+    choice[0] == 5;
 }
 function setSix() {
-    whichID[5] = "true";
+    choice[0] == 6;
 }
 function setSeven() {
-    whichID[6] = "true";
+    choice[0] == 7;
 }
 function setEight() {
-    whichID[7] = "true";
+    choice[0] == 8;
 }
