@@ -127,18 +127,8 @@ p a {
     color: white;
 }
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
 .fa-linkedin {
     background: #0072b1;
-    color: white;
-}
-
-.fa-tumblr {
-    background: #34526f;
     color: white;
 }
 
@@ -171,7 +161,7 @@ p a {
 
 .result {
     text-align: center;
-    width: 30px;
+    width: 50px;
     border: 1px solid gray;
     margin-top: 5px;
     margin-bottom: 5px;
