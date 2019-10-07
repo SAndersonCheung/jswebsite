@@ -1,12 +1,11 @@
-    
-var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight"];
+    var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight"];
 var whichID = ["false", "false", "false", "false", "false", "false", "false", "false"];
 
 function makeGradient() {
     var colourOne = null;
     var colourTwo = null;
 
-    for (var i = 0; i < ids.length - 1; i++){
+    for (var i = 0; i < ids.length; i++){
         if (whichID[i] == "true" && colourOne == null) {
             colourOne = ids[i];
         } else if (whichID[i] == "true" && colourOne != null && colourTwo == null) {
