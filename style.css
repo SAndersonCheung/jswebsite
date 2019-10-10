@@ -167,7 +167,7 @@ p a {
     margin-bottom: 5px;
 }
 
-#mainPic {
+#mainPic, #resultImg {
     width: 300px;
     height: 300px;
     text-align: center;
