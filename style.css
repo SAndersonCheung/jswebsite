@@ -141,6 +141,11 @@ p a {
     width: 200px;
 }
 
+#about-right {
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
 #about-center {
     width: 425px;
     text-align: center;
