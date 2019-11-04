@@ -3,6 +3,7 @@
 * {
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 body {
@@ -68,22 +69,35 @@ p a {
 /* applies to directory */
 
 #infoblocks {
+    margin: 8px -16px;
     text-align: justify;
 }
 
-#infoblocks .infoblock {
-    display: inline-block;
+#infoblocks, 
+#infoblocks > .infoblock {
+    padding: 8px;
 }
 
 .infoblock {
+    float: left;
+    height: 285px;
+    width: 200px;
     text-align: center;
-    width: 180px;
-    height: 250px;
     padding: 10px;
     margin: 12px;
     border: 1px solid gray;
     box-shadow: 5px 5px 0px -1px rgba(196,196,196,1);
+}
 
+#infoblocks.after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blockcontent {
+    background-color: white;
+    padding: 10px;
 }
 
 .infoblock a {
@@ -92,11 +106,7 @@ p a {
     padding: 10px;
 }
 
-#infoblocks:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
-}
+/* Applies to all */
 
 .line {
     text-align: center;
@@ -162,7 +172,10 @@ p a {
 
 .page-content{
     text-align: center;
+    margin: auto;
 }
+
+
 
 .result {
     text-align: center;
