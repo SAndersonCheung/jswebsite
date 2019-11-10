@@ -1,24 +1,24 @@
 // String Reversal Methods
 function reverseString1(){
 
-    var str = document.getElementById("instring").value;
+    let str = document.getElementById("instring").value;
     // seperate
-    var split = str.split("");
-    var reverse = split.reverse();
-    var join = reverse.join("");
+    let split = str.split("");
+    let reverse = split.reverse();
+    let join = reverse.join("");
     document.getElementById('reverseResult').innerHTML = join;
 }
 
 function reverseString2(){
 
-    var str = document.getElementById("instring").value;
+    let str = document.getElementById("instring").value;
     // in one line
     return str.split("").reverse().join("");
 }
 
 function reverseString3(){
 
-    var str = document.getElementById("instring").value;
+    let str = document.getElementById("instring").value;
     // without .reverse()
     let strArr = str.split("");
     let start = 0;
@@ -38,7 +38,7 @@ function reverseString3(){
 // String Vowel Counting Methods
 function vowelCount(){
     
-    var str = document.getElementById("instring").value;
+    let str = document.getElementById("instring").value;
     
     let strArr = str.split("");
     let resArr = [];
@@ -58,4 +58,9 @@ function isVowel(char){
     } else {
         return false;
     }
+}
+
+
+// Palindrome
+function isPalin(){
 }
