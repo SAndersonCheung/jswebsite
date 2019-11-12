@@ -37,7 +37,6 @@ function reverseString3(){
 
 // String Vowel Counting Methods
 function vowelCount(){
-    
     let str = document.getElementById("instring").value;
     
     let strArr = str.split("");
@@ -63,4 +62,19 @@ function isVowel(char){
 
 // Palindrome
 function isPalin(){
+    let str = document.getElementById("instring").value;
+    let end = str.length;
+    let mid = str.length / 2;
+    let result = false;
+    
+    for (let i = 0; i < mid; i++){
+        if (i != end){
+            break;
+        }
+        end--;
+    }
+    if (end == mid){
+        result = true;
+    }
+    document.getElementById('palinResult').innerHTML = result;
 }
