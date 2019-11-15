@@ -63,18 +63,17 @@ function isVowel(char){
 // Palindrome
 function isPalin(){
     let str = document.getElementById("instring").value;
-    let end = str.length;
-    let mid = str.length / 2;
-    let result = false;
+    let end = str.length - 1;
+    let mid = Math.floor(str.length / 2);
+    if (str.length % 2 == 0) { mid++; }
+    let result = true;
     
     for (let i = 0; i < mid; i++){
-        if (i != end){
+        if (str.charAt(i) != str.charAt(end)){
+            result = false
             break;
         }
         end--;
-    }
-    if (end == mid){
-        result = true;
     }
     document.getElementById('palinResult').innerHTML = result;
 }
