@@ -186,7 +186,12 @@ p a {
     margin: auto;
 }
 
-
+canvas {
+/*    background: black; */
+    border: 3px solid darkslategrey;
+    height: 250px;
+    width: 500px;
+}
 
 .result {
     text-align: center;
